@@ -12,7 +12,7 @@ export default class Movies extends Component {
          console.log(movie);
          const movies = this.state.movies.filter(m => m._id !== movie._id);
          this.setState({movies:movies});
-
+         
      };
 
     render() {
@@ -35,7 +35,7 @@ export default class Movies extends Component {
                 <tbody>
                 
                 {this.state.movies.map(movie => (
-               <tr id={movie._id}>
+               <tr key={movie._id}>
                 <td>
                     {movie.title}
                 </td>

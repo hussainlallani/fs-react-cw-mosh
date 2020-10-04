@@ -49,7 +49,7 @@ export default class Movies extends Component {
                     {movie.dailyRentalRate}
                 </td>
                 <td>
-                    <button className="btn btm-danger btn-sm" onClick={() => this.handleDelete(movie)}>Delete</button>
+                    <button className="btn btn-danger btn-sm" onClick={() => this.handleDelete(movie)}>Delete</button>
                     
                 </td>
                 </tr>
